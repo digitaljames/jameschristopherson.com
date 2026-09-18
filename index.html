@@ -20,6 +20,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Analytics (skipped on localhost so local testing doesn't pollute stats) -->
+  <script>
+    if (!['localhost', '127.0.0.1', ''].includes(location.hostname)) {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', 'G-JQHK7ZFWQK');
+      var ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-JQHK7ZFWQK';
+      document.head.appendChild(ga);
+    }
+  </script>
 </head>
 <body>
 
